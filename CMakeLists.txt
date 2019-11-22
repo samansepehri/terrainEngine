@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 2.8)
-project(TerrainEngine)
-add_executable(TerrainEngine main.cpp)
+cmake_minimum_required(VERSION 3.6)
+project(TerrainEngine CXX)
+set(SOURCE "src/main.cpp")
+add_executable(TerrainEngine ${SOURCE})
 install(TARGETS TerrainEngine DESTINATION bin)
